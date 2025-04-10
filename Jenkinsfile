@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "meghanavalluri/simple-java-app"   
+        IMAGE_NAME = "meghanavalluri/java-microservice"   
         IMAGE_TAG = "${BUILD_NUMBER}"
         DOCKER_CREDS = "Dockerhub-creds"                
     }
