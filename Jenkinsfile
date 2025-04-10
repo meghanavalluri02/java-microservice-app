@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "meghanavalluri/simple-java-app"   // ✅ Same image name is fine
+        IMAGE_NAME = "meghanavalluri/simple-java-app"   
         IMAGE_TAG = "${BUILD_NUMBER}"
-        DOCKER_CREDS = "Dockerhub-creds"                // ✅ Jenkins DockerHub credentials ID
+        DOCKER_CREDS = "Dockerhub-creds"                
     }
 
     stages {
